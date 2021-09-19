@@ -1,6 +1,6 @@
 {
   "name": "s0cks",
-  "description": "Deploy wstunnel to Heroku as a SOCKS5 proxy.",
+  "description": "Deploy wstunnel to Heroku as a SOCKS5 proxy!",
   "stack": "container",
   "env": {
     "CHISEL_AUTH": {
