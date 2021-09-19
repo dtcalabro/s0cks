@@ -1,6 +1,7 @@
 import socket
 import threading
 import select
+import os, sys
 
 SOCKS_VERSION = 5
 
