@@ -4,4 +4,6 @@ RUN chmod +x /bin/wstunnel
 RUN useradd -m heroku
 USER heroku
 EXPOSE 5000
+EXPOSE 8080
+EXPOSE 443
 CMD wstunnel --server ws://0.0.0.0:8080
