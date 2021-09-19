@@ -4,4 +4,4 @@ RUN chmod +x /bin/wstunnel
 RUN useradd -m heroku
 USER heroku
 EXPOSE 5000
-CMD wstunnel server --auth $CHISEL_AUTH --socks5 --reverse
+CMD wstunnel --server ws://0.0.0.0:8080
