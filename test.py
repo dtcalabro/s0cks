@@ -146,7 +146,9 @@ class Proxy:
 
 if __name__ == "__main__":
     proxy = Proxy()
-    proxy.run("127.0.0.1", 3000)
+    port = int(os.environ.get("PORT", 3000))
+    #proxy.run("127.0.0.1", 3000)
+    proxy.run("0.0.0.0", port)
 
 """
 from socketserver import ThreadingMixIn, TCPServer, StreamRequestHandler
